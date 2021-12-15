@@ -11,6 +11,9 @@
 		B1483B302768C97500199E94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1483B2F2768C97500199E94 /* ContentView.swift */; };
 		B1483B322768C97800199E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1483B312768C97800199E94 /* Assets.xcassets */; };
 		B1483B352768C97800199E94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1483B342768C97800199E94 /* Preview Assets.xcassets */; };
+		B1483B3E2768CD8400199E94 /* OverlayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1483B3D2768CD8400199E94 /* OverlayService.swift */; };
+		B1483B412768CE0100199E94 /* OverlayWindow in Frameworks */ = {isa = PBXBuildFile; productRef = B1483B402768CE0100199E94 /* OverlayWindow */; };
+		B1483B432768CEB400199E94 /* OverlayExampleBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1483B422768CEB400199E94 /* OverlayExampleBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		B1483B2F2768C97500199E94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1483B312768C97800199E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1483B342768C97800199E94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1483B3C2768CD4200199E94 /* OverlayWindow */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OverlayWindow; path = ../OverlayWindow; sourceTree = "<group>"; };
+		B1483B3D2768CD8400199E94 /* OverlayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayService.swift; sourceTree = "<group>"; };
+		B1483B422768CEB400199E94 /* OverlayExampleBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayExampleBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1483B412768CE0100199E94 /* OverlayWindow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +42,10 @@
 		B1483B212768C97500199E94 = {
 			isa = PBXGroup;
 			children = (
+				B1483B3B2768CD4200199E94 /* Packages */,
 				B1483B2C2768C97500199E94 /* OverlayWindowExample */,
 				B1483B2B2768C97500199E94 /* Products */,
+				B1483B3F2768CE0100199E94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +62,8 @@
 			children = (
 				B1483B2D2768C97500199E94 /* OverlayWindowExampleApp.swift */,
 				B1483B2F2768C97500199E94 /* ContentView.swift */,
+				B1483B3D2768CD8400199E94 /* OverlayService.swift */,
+				B1483B422768CEB400199E94 /* OverlayExampleBody.swift */,
 				B1483B312768C97800199E94 /* Assets.xcassets */,
 				B1483B332768C97800199E94 /* Preview Content */,
 			);
@@ -65,6 +76,21 @@
 				B1483B342768C97800199E94 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1483B3B2768CD4200199E94 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B1483B3C2768CD4200199E94 /* OverlayWindow */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		B1483B3F2768CE0100199E94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,9 @@
 			dependencies = (
 			);
 			name = OverlayWindowExample;
+			packageProductDependencies = (
+				B1483B402768CE0100199E94 /* OverlayWindow */,
+			);
 			productName = OverlayWindowExample;
 			productReference = B1483B2A2768C97500199E94 /* OverlayWindowExample.app */;
 			productType = "com.apple.product-type.application";
@@ -137,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1483B3E2768CD8400199E94 /* OverlayService.swift in Sources */,
 				B1483B302768C97500199E94 /* ContentView.swift in Sources */,
 				B1483B2E2768C97500199E94 /* OverlayWindowExampleApp.swift in Sources */,
+				B1483B432768CEB400199E94 /* OverlayExampleBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +372,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1483B402768CE0100199E94 /* OverlayWindow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OverlayWindow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B1483B222768C97500199E94 /* Project object */;
 }

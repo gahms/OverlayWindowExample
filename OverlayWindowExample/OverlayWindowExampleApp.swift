@@ -7,11 +7,16 @@
 
 import SwiftUI
 
+let overlayService = OverlayService()
+
 @main
 struct OverlayWindowExampleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    overlayService.show()
+                }
         }
     }
 }
